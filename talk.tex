@@ -216,4 +216,90 @@ P(\hat{\bf p}_k=1|{\bf x}_k) = \left\{ \begin{array}{ll} 1 & {\rm if}\; k \in {\
 \end{itemize}
 \end{frame}
 
+\section{Experimental Results}
+\begin{frame}{Datasets}
+\begin{itemize}
+\item {\bf Amazon Multi-Domain Sentiment Dataset.} More than $340,000$ product reviews 
+on $25$ different domains.
+\item {\bf Reuters Corpus Volume I} (RCV1-v2). Over 800,000 real-world
+news wire stories represented in bag-of-words vectors with 47,236 dimensions.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Convergence}
+\begin{center}
+\begin{minipage}{.7\textwidth}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{images/amazon_convergence.pdf}\\
+  {\bf Amazon}
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{Bias}
+\begin{center}
+\begin{minipage}{.7\textwidth}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{images/amazon_bias.pdf}\\
+  {\bf Amazon}
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{Quality of the representation}
+\begin{center}
+\begin{minipage}{.7\textwidth}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{images/rcv1_generalization.pdf}\\
+  {\bf RCV1-v2}
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{Speed-ups}
+\begin{center}
+\begin{minipage}{.7\textwidth}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{images/amazon_speedup.pdf}\\
+  {\bf Amazon}
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{Speed-ups}
+\begin{center}
+\begin{minipage}{.7\textwidth}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{images/rcv1_speedup.pdf}\\
+  {\bf RCV1-v2}
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{Speed-ups}
+\begin{center}
+\begin{minipage}{.7\textwidth}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{images/fullamazon_speedup.pdf}\\
+  {\bf Full Amazon}
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+\begin{itemize}
+\item Introduced simple speed-up technique.
+\item Unbiased estimator.
+\item Same quality of representation.
+\item Speed-ups up to 20x.
+\end{itemize}
+\end{frame}
+
 \end{document}
